@@ -1,11 +1,18 @@
 {
-  "description": "PERC-free laundry from ₹89/kg, expert dry cleaning, saree care, shoe spa and home linen cleaning. Estimate your order and request doorstep pickup with Mr. Cleanzo by Sarvadaa.",
+  "title": "Mr. Cleanzo - Laundry & Dry Cleaning Services",
+  "description": "Tired of laundry? Get fresh, spotless clothes with Mr. Cleanzo—the best laundry & dry cleaning service in Mau, UP. Enjoy fast doorstep pickup. Book today!",
+  "language": "en",
   "robots": {
     "index": false
+  },
+  "icons": {
+    "icon": "/.figma/make/favicon.png"
+  },
+  "openGraph": {
+    "image": "/.figma/make/social-image.png"
   },
   "accessibility": {
     "addBypassLinks": false,
     "ignoreReducedMotion": false
-  },
-  "title": "Mr. Cleanzo by Sarvadaa | Laundry & Dry Cleaning"
+  }
 }
