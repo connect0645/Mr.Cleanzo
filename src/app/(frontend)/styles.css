@@ -1,0 +1,124 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter', Arial, sans-serif;
+  --color-ink: #202819;
+  --color-olive: #7b8e5b;
+  --color-mint: #9ae7c5;
+  --color-beige: #f3efe6;
+  --color-line: #e0ddd3;
+}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 105px;
+  }
+  body {
+    color: #202819;
+    background: white;
+  }
+  button,
+  summary {
+    cursor: pointer;
+  }
+  button:disabled {
+    cursor: not-allowed;
+  }
+  a,
+  button,
+  input,
+  select,
+  textarea,
+  summary {
+    -webkit-tap-highlight-color: transparent;
+  }
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible,
+  summary:focus-visible {
+    outline: 2px solid #7b8e5b;
+    outline-offset: 4px;
+  }
+  ::selection {
+    background: #b5efd3;
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  dialog {
+    margin: auto;
+  }
+  dialog::backdrop {
+    background: #20281988;
+    backdrop-filter: blur(6px);
+  }
+}
+@keyframes benefit-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes chat-pulse {
+  0%,
+  100% {
+    box-shadow: 0 8px 25px #22d95855;
+  }
+  50% {
+    box-shadow: 0 8px 35px #22d95899;
+  }
+}
+.benefits-motion {
+  animation: benefit-scroll 48s linear infinite;
+}
+.chat-orb {
+  animation: chat-pulse 3s ease-in-out infinite;
+}
+.hero-surface {
+  background: radial-gradient(ellipse at 82% 34%, #eee5dc 0%, #f3efe6 73%);
+}
+.figma-custom-code-fragment {
+  display: contents;
+}
+.figma-bypass-link {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 100;
+  transform: translateY(-150%);
+  border-radius: 6px;
+  background: #202819;
+  color: white;
+  padding: 8px 12px;
+}
+.figma-bypass-link:focus {
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .benefits-motion {
+    animation: none;
+    width: 100%;
+  }
+  .benefits-motion > div {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 16px;
+  }
+  .benefits-motion > div[aria-hidden='true'] {
+    display: none;
+  }
+  .benefits-motion span {
+    white-space: normal;
+  }
+  .chat-orb {
+    animation: none;
+  }
+}
