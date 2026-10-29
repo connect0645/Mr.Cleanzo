@@ -1,0 +1,11 @@
+{
+  "description": "PERC-free laundry from ₹89/kg, expert dry cleaning, saree care, shoe spa and home linen cleaning. Estimate your order and request doorstep pickup with Mr. Cleanzo by Sarvadaa.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  },
+  "title": "Mr. Cleanzo by Sarvadaa | Laundry & Dry Cleaning"
+}
